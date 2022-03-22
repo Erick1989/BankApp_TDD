@@ -6,6 +6,10 @@ add_subdirectory(Database)
 add_subdirectory(UserInterfaces)
 
 
+add_executable(BankApp main.cpp )
+target_link_libraries(BankApp UserInterface Database Account)
+
+
 
 
 
